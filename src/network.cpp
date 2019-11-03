@@ -178,7 +178,6 @@ std::vector<std::pair<size_t, double> >Network::neighbors(const size_t& n) const
 	itlow = links.lower_bound(std::make_pair(n,0));
 	itup = links.upper_bound(std::make_pair(n+1,0));
 	
-	
 	for(;itlow != itup; ++itlow){
 		vecPair.push_back(std::make_pair(itlow->first.second, itlow->second));
 	}
